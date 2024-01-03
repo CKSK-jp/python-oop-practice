@@ -24,6 +24,10 @@ class SerialGenerator:
         self.start = start - 1
         self.updated = self.start
 
+    def __repr__(self):
+        """Show representation"""
+        return f"<SerialGenerator start={self.start} updated={self.updated}>"
+
     def generate(self):
         self.updated += 1
         return self.updated
